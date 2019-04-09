@@ -1,0 +1,317 @@
+*      {                            
+    box-sizing: border-box;        
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+}
+
+.row::before,
+.row::after {
+content: " "; 
+display: table; 
+}
+
+.row::after {
+clear: both;
+}
+
+[class*="col-"]{
+float: left;
+min-height: 1px;
+padding: 10px;
+overflow: auto;
+}
+
+header {                
+background-color: grey;
+height: 70px; 
+position: fixed;
+width: 100%;
+}
+
+.container {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;   
+}
+
+section > .container {
+margin: 0 auto;
+}
+
+header > nav img {     /*logo  chcialam tu podpiac link do strony internetowej*/
+padding: 5px 0;
+}
+
+header > nav ul {     /*linki ogolna charakteryzacja*/
+float: right;
+margin: 0;
+padding: 0;
+list-style-type: none; 
+}
+
+header > nav ul > li {      /*linki ogolna charakteryzacja*/
+display: inline-block; 
+}
+
+header > nav ul > li > a {      /*linki ogolna charakteryzacja*/
+line-height: 50px;
+display: block;
+color: #fff;
+padding: 0 20px;
+text-decoration: none;
+text-transform: uppercase;  
+}
+
+header > nav ul > li > a:hover {
+background: darkgrey;
+opacity: 0.9;
+}   
+
+.hero {
+background-image: url(http://www.lunapera.com/uploads/product/gallery/27/main/product_1486568706_5842.jpg);
+width: 100%;
+height: 100vh;
+padding-top: 10vh;
+background-size: cover;
+background-position: center;
+overflow: hidden;
+}
+
+.slogan h1 { 
+background-color: rgba(170,170,170,0.9);
+float: right;
+max-width: 800px;
+font-size: bold 0px;
+color: black;
+padding: 10px;
+text-align: center;
+} 
+
+.slogan h1 span {
+ color: #FABD03;     
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}  
+
+.btn {
+margin: 0 auto;
+border-radius: 50%;
+color: black;
+height: 60px;
+width: 60px; 
+cursor: pointer;
+font-size: 40px;
+border: none;
+transition: 0.6s;
+background: lightblue;   
+}   
+
+.btn:hover {
+background-color: lightgrey;
+}
+
+.employees {
+text-align: center;
+}
+.btn-emp {
+margin: 0 auto;
+border-radius: 50%;
+color: black;
+height: 80px;
+width: 80px; 
+cursor: pointer;
+font-size: 20px;
+border: none;
+transition: 0.6s;
+background: lightgrey;   
+}    
+
+.btn-emp:hover {
+background-color: lightblue;
+opacity: 0.5;
+transition: 1.2s;
+}
+
+button {                     
+background: lightblue;      
+}
+
+.gallery img {
+float: right; 
+width: 300px;
+height: 300px;
+object-fit: cover;       
+}
+
+h1, h2, p {
+font-style: center;   
+}
+
+img:hover {
+transition: 0.9s; 
+}
+
+.help {
+background: lightblue;
+  
+}
+
+.help img { 
+text-align: center;
+width: 300px;
+height: 300px; 
+border-radius: 50%;
+margin: 50PX;
+}
+
+.help h2 {
+text-align: center;
+}
+
+.inside .col-6 {
+display: inline-block;
+float: right;
+}
+
+.data .container .row p {
+color: #FABD03;
+}
+
+.data {
+text-align: center; 
+}
+
+footer {
+background-color: grey;
+color: black; 
+text-align: left;
+/*margin 0px;*/
+padding: 20px; 
+}  
+
+footer p {
+font-size: 10px;
+}
+
+ul {
+padding: 0;
+list-style: none;
+margin. 0;
+text-align: left;
+}
+
+.right {            /*col right and left nie sa rowne w in touch??*/
+/*margin: auto 0;*/
+padding: 0;
+text-align: center;
+color: #FABD03;
+}
+
+.left {
+/*margin: auto 0;*/
+padding: 0;
+text-align: center;   
+}
+
+.left ul {
+margin: 0;
+}
+
+.left ul li h6 {
+margin: 0;
+}
+
+.right ul {
+margin: 0;
+}
+
+.right ul li p {
+margin: 0;
+}
+
+.icon-btn {
+margin: 20px;
+border-radius: 50%;
+color: black;
+height: 40px;
+width: 40px; 
+cursor: pointer;
+font-size: 20px;
+display: inline-block;
+border: none;
+transition: 0.6s;
+}
+
+.social {
+margin: 0 auto; 
+border: 1px;
+width: 100%;
+text-align: center;
+color: #ffffff;
+}
+
+.twitter {
+color: #4099ff;
+}
+
+.facebook {
+color: #3B5998;
+}
+
+.instagram {
+color: #cd4af0;
+}
+
+.icon-btn:hover {
+transform: scale(1.40);
+}
+
+.twitter:hover {
+background-color: #4099ff;
+color: #ffffff;
+}
+
+.facebook:hover {
+background-color: #3B5998;
+color: #ffffff;
+}
+
+.instagram:hover {
+background-color: #cd4af0;
+color: #ffffff;
+}
+
+.copyright {            
+text-align: center;
+margin: 0;
+padding: 0;
+background-color: black;
+color: white;
+}
